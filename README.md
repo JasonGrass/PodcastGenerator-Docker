@@ -3,12 +3,16 @@
 
 ## PodcastGenerator
 
-一款开源的 Podcast 发布工具 
+一款开源的 Podcast 发布工具   
+
 [albertobeta/PodcastGenerator: Open Source Podcast Publishing Solution since 2006](https://github.com/albertobeta/PodcastGenerator )
+
+其所有的代码，在本仓库的 `PodcastGenerator` 目录下。 
 
 ## Docker 包装
 
 基础镜像为：  
+
 `registry.cn-hangzhou.aliyuncs.com/diligentyang/centos6.7_nginx_1.10_php5.6.29:v1.0` 
 
 参考文章：
@@ -23,7 +27,7 @@
 
 所以，解决这个问题，第一步需要检查 `www` 这个目录中，是否有 media 和 images 这两个目录，如果没有，用 mkdir 创建。
 如果已经存在，使用 `chmod 777 media`, `chmod 777 images`, `chmod 777 .` (在 www 这个目录下)，修改目录权限。
-再次之前，通过 `su` 命令切换到 root 用户权限。
+再此之前，可能需要通过 `su` 命令切换到 root 用户权限。
 
 ## 优化
 
