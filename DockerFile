@@ -1,0 +1,7 @@
+FROM registry.cn-hangzhou.aliyuncs.com/diligentyang/centos6.7_nginx_1.10_php5.6.29:v1.0
+
+COPY ./PodcastGenerator ./var/www
+
+EXPOSE 80
+
+CMD ["sh", "-c", "/usr/sbin/php-fpm -D ; service nginx ; /bin/sh"]
